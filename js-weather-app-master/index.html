@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> weather by eva </title>
+    <link rel="stylesheet"  href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  </head>
+
+<body>
+  <header class="page-header">
+    <h1> Weather </h1>
+    </header>
+
+<!--this weather information is shown through the api !-->
+<div class= "weather-container">
+  <img class= "icon">
+  <p class= "weather"> </p>
+  <p class= "temp">  </p>
+  <p class= "city">  </p>
+
+</div>
+
+<!--this is the modal you should klick to get more details of the weather -->
+<button id = "modalButton" class="button" > more details </button>
+
+<div id = "modal" class="modal-details">
+  <div id = "modal-content" class="modal-content">
+  <p class="detailWeather"> </p>
+    <span id = "closeButton" class="closeButton"> &times;</span>
+    
+  </div>
+</div>
+
+
+    <footer class="page-footer">
+      <p> Find me on </p>
+      <div class="social-media">
+      <a href="https://www.xing.com/profile/Eva_Erdmann7/cv" target="_blank">
+        <img src="img/xing.png" alt="xing" width="30" height="30">
+      </a>
+      <a href="https://www.linkedin.com/in/eva-erdmann-6ba77989/" target="_blank">
+        <img src="img/linkedinlogo.svg" alt="linkedin" width="30" height="30">
+      </a>
+      <a href="https://www.instagram.com/digital4small/" target="_blank">
+        <img src="img/instaicon.png" alt="instagram" width="30" height="30">
+      </a>
+      <a href="https://github.com/erdmanne" target="_blank">
+        <img src="img/githubcat.png" alt="github" width="30" height="30">
+      </a>
+    </div>
+    </footer>
+  </body>
+  </html>

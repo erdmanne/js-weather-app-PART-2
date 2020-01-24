@@ -1,0 +1,161 @@
+/*eva js weather app
+Colors used
+Text Color (black): #231815
+Third Color (Dark Gray): #2757474;
+Secondary Color (red): #742418;
+Primary Color (light grey): #E6E5E5;
+hover: RGB(219, 202, 207)
+ */
+ :root  {
+
+   --primary-color: #E6E5E5;
+   --secondary-color: white;
+   --link-color: #742418;
+   --visited-link-color: #231815;
+   --active-link-color: #231815;
+   --color:#231815;
+   --secondary-bg-color: #231815;
+   --button-text-primary: #231815;
+   --button-text-secondary: #231815;
+   --sun-transition-color-0: #edc655;
+   --sun-transition-color-50: #fcffad;
+   --sun-transition-color-100: #f76414;
+   --grid-bg-color: #E6E5E5;
+   --primary-font-size: 16px;
+   --primary-font-weigth: 400;
+   --font-family:'Lato', sans-serif;
+   --h1-font-family:'Lobster', curisive;
+   --h1-font-size: 100px;
+   --h1-font-weight: 700;
+   --h2-font-size: 20px;
+   --h2-font-weight: 700;
+   --h3-font-size: 16px;
+   --h3-font-weight: 700;
+
+}
+
+* {
+  box-sizing:border-box;
+}
+
+body{
+
+  padding: 20px;
+  font-family: var(--font-family);
+  font-size: 100%;
+  background-image: url("../img/frozen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header {
+  font-family: var(--h1-font-family);
+  font-size: var(--h1-font-size);
+  text-align: center;}
+
+
+.weather-container {
+
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+.weather{
+  font-family: var(--h1-font-family);
+  font-size: 30px;
+}
+
+.icon {
+
+}
+
+.temp {
+  font-style: italic;
+  font-size: 60px;
+}
+
+.city {
+  font-style: italic;
+  font-size: 60px;
+}
+
+/*modal styling*/
+.button {
+background: grey;
+padding: 1em 2em;
+color: #ffff;
+border: 20px;
+cursor: pointer;
+
+position: center;
+}
+
+.button:hover{
+  background: #333
+
+}
+
+.modal-details {
+display: none;
+position: fixed;
+z-index:1; /*order of element*/
+left: 0;
+top:0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: black;
+opacity: 0.8;
+}
+
+/*this is where the pop-up is shown aktually*/
+.modal-content{
+background-color: grey;
+margin: 20% auto;
+padding: 20px;
+width: 50%;
+
+}
+.detailWeather{
+  font-size: 30px;
+  text-align: center;
+}
+
+.closeButton{
+color: red;
+position: relative;
+font-size: 30px;
+}
+.close-button:hover, .close-button:focus{
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*modal syling end*/
+
+.page-footer{
+  margin-top: 50px;
+  font-family: var(--h1-font-family);
+  text-align: center;
+}
+
+/*for responsive design
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+  h1  { font-size: 2em
+
+    }
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+    h1  { font-size: 1em
+
+      }
+}
