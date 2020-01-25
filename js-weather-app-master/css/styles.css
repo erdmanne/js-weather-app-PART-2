@@ -56,7 +56,6 @@ body{
 
 
 .weather-container {
-
     text-align: center;
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -82,14 +81,15 @@ body{
 }
 
 /*modal styling*/
+.divBtn{
+  text-align: center;
+}
 .button {
+padding: 3em 4em;
 background: grey;
-padding: 1em 2em;
 color: #ffff;
-border: 20px;
+border: 10px;
 cursor: pointer;
-
-position: center;
 }
 
 .button:hover{
@@ -128,7 +128,7 @@ color: red;
 position: relative;
 font-size: 30px;
 }
-.close-button:hover, .close-button:focus{
+.closeButton:hover, .closeButton:focus{
   color: #333;
   text-decoration: none;
   cursor: pointer;
