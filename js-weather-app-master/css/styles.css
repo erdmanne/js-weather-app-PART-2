@@ -51,9 +51,16 @@ body{
 
 .page-header {
   font-family: var(--h1-font-family);
-  font-size: var(--h1-font-size);
+  font-size: 60px;
   text-align: center;}
 
+  main .row div,
+  main .row aside,
+  main .row article {
+    background-color: #E6E5E5;
+    border: 10px solid green;
+    height: 180px;
+  }
 
 .weather-container {
     text-align: center;
@@ -79,15 +86,18 @@ body{
   font-style: italic;
   font-size: 60px;
 }
-
-/*modal styling*/
+.divBtn{
+  text-align: center;
+}
+/* everything with modal stuff is commented bacause of replacing it with bootstrap
+/*modal styling
 .divBtn{
   text-align: center;
 }
 
 
 
-
+*/
 .modal-details {
 display: none;
 position: fixed;
@@ -99,22 +109,26 @@ width: 100%;
 overflow: auto;
 background-color: black;
 opacity: 0.8;
+text-align: center;
 }
 
-/*this is where the pop-up is shown aktually*/
+.modal-title {
+  font-family: var(--font-family);
+  text-align: center;
+}
+.detailWeather{
+  font-family: var(--h1-font-family);
+  font-size: 30px;
+  text-align: center;
+}
+
+/* everything with modal stuff is commented bacause of replacing it with bootstrap - this is where the pop-up is shown aktually
 .modal-content{
 background-color: grey;
 margin: 20% auto;
 padding: 20px;
 width: 50%;
-
 }
-.detailWeather{
-  font-size: 30px;
-  text-align: center;
-}
-
-
 
 /*modal syling end*/
 
@@ -129,15 +143,11 @@ width: 50%;
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}
-  h1  { font-size: 2em
 
-    }
 }
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
-    h1  { font-size: 1em
 
-      }
 }

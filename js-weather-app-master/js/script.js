@@ -40,6 +40,7 @@ $("#modalButton").hide().delay(1000).show(1000);
 //new modal with bootstrap
   $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
+  $('#myModal').modal('toggle')
 })
 
 

@@ -20,25 +20,50 @@
   </head>
 
 <body>
-  <header class="page-header">
-    <h1> Weather </h1>
-    </header>
 
+<!--all the nav stuff with bootstrap-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <img class="navbar-brand" src="img/Logoee.png" alt="logo" width="100" height="100" >
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--end navigation-->
+<header class="page-header">
+  <h1> Weather </h1>
+  </header>
 <!--this weather information is shown through the api !-->
-<div class= "weather-container">
+<main class="container">
 
-  <p class= "city">  </p>
-  <p class= "weather"> </p>
-  <img class= "icon">
-  <p class= "temp" >°  </p>
+  <div class="row">
+    <div class="col-md-3"><p class= "city"> </p></div>
+    <div class="col-md-3"><p class= "weather"> </p></div>
+    <div class="col-md-3"><img class= "icon"></div>
+    <div class="col-md-3"><p class= "temp" >° </p></div>
 </div>
+</main>
+
 
 
 <!--new modal stuff with bootstrap-->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModal">
+<div class="divBtn">
+<button type="button" class="btn btn-dark " data-toggle="modal" data-target="#exampleModal">
 more details
 </button>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -62,14 +87,14 @@ more details
 </div>
 </div>
 
-<!--old modal stuff without bootstrap-->
+<!--old modal stuff without bootstrap
 <div id = "modal" class="modal-details">
   <div id = "modal-content" class="modal-content">
   <p class="detailWeather"> </p>
     <span id = "closeButton" class="btn btn-outline-dark"> &times;</span>
   </div>
 </div>
-<!--this is the  old modal you should klick to get more details of the weather 
+*****this is the  old modal you should klick to get more details of the weather
 <div class="divBtn">
   <button id = "modalButton" type="button" class="btn btn-dark btn-lg btn-block">more details</button> -->
 
