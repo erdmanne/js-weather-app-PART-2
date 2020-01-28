@@ -33,7 +33,7 @@ $("#modalButton").on("click", function(){
 //hide the modal again when clicking "x"
 $("#closeButton").on("click", function(){
   $("#modal").hide();
-  
+
 
 
 

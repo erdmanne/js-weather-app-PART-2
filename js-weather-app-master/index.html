@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> weather by eva </title>
-    <link rel="stylesheet"  href="css/styles.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="css/styles.css"><link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
@@ -34,12 +35,13 @@
 
 <!--this is the modal you should klick to get more details of the weather -->
 <div class="divBtn">
-<button id = "modalButton" type=button class="button" > more details </button>
+  <button id = "modalButton" type="button" class="btn btn-dark btn-lg btn-block">more details</button>
+
 </div>
 <div id = "modal" class="modal-details">
   <div id = "modal-content" class="modal-content">
   <p class="detailWeather"> </p>
-    <span id = "closeButton" class="closeButton"> &times;</span>
+    <span id = "closeButton" class="btn btn-outline-dark"> &times;</span>
   </div>
 </div>
 
@@ -61,5 +63,8 @@
       </a>
     </div>
     </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
   </html>

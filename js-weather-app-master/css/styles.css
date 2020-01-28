@@ -84,19 +84,9 @@ body{
 .divBtn{
   text-align: center;
 }
-.button {
-font-size: 15px;
-padding: 3em 4em;
-background: grey;
-color: #ffff;
-border: 10px;
-cursor: pointer;
-}
 
-.button:hover{
-  background: #333
 
-}
+
 
 .modal-details {
 display: none;
@@ -124,16 +114,7 @@ width: 50%;
   text-align: center;
 }
 
-.closeButton{
-color: red;
-position: relative;
-font-size: 30px;
-}
-.closeButton:hover, .closeButton:focus{
-  color: #333;
-  text-decoration: none;
-  cursor: pointer;
-}
+
 
 /*modal syling end*/
 
