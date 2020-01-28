@@ -27,18 +27,24 @@ $(document).ready(function(){
 //  alert($);   ***for checking if jquery is installed and up and running
 //just for fun to give the page more life
 $("#modalButton").hide().delay(1000).show(1000);
+
+
 //show the modal when clicking on the button "more details"
-$("#modalButton").on("click", function(){
-  $("#modal").show(); //show the modal when clicking
+//$("#modalButton").on("click", function(){
+//  $("#modal").show(); //show the modal when clicking
 //hide the modal again when clicking "x"
-$("#closeButton").on("click", function(){
-  $("#modal").hide();
+//$("#closeButton").on("click", function(){
+//  $("#modal").hide();
+
+
+//new modal with bootstrap
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 
 
 
 
 
 
-});
-});
 });

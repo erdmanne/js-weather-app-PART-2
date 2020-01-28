@@ -33,17 +33,45 @@
   <p class= "temp" >°  </p>
 </div>
 
-<!--this is the modal you should klick to get more details of the weather -->
-<div class="divBtn">
-  <button id = "modalButton" type="button" class="btn btn-dark btn-lg btn-block">more details</button>
 
+<!--new modal stuff with bootstrap-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModal">
+more details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Weather in words</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <p class="detailWeather"> </p>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+
+    </div>
+  </div>
 </div>
+</div>
+
+<!--old modal stuff without bootstrap-->
 <div id = "modal" class="modal-details">
   <div id = "modal-content" class="modal-content">
   <p class="detailWeather"> </p>
     <span id = "closeButton" class="btn btn-outline-dark"> &times;</span>
   </div>
 </div>
+<!--this is the  old modal you should klick to get more details of the weather 
+<div class="divBtn">
+  <button id = "modalButton" type="button" class="btn btn-dark btn-lg btn-block">more details</button> -->
 
 
     <footer class="page-footer">
