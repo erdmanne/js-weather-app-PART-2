@@ -51,7 +51,7 @@ body{
 
 .page-header {
   font-family: var(--h1-font-family);
-  font-size: 60px;
+  font-size: 80px;
   text-align: center;}
 
   main .row div,
@@ -170,4 +170,10 @@ width: 50%;
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
 
+}
+
+/* Usage as a mixin*/
+.skip-navigation {
+  @include sr-only;
+  @include sr-only-focusable;
 }

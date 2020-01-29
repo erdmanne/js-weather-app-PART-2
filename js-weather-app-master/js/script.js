@@ -1,13 +1,14 @@
-//stuff for user input (city)
+//stuff for user input (city) ---Dear Emmanuel - it does not work - where is my mistake??? :(
 
-
-
-//
 //var api = "http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&APPID=0595215f568d90110031d71a7b16a440";
 //var citytype = "London";
 //var apiKey = "&APPID=0595215f568d90110031d71a7b16a440";
 //var units = "&units=metric";
 //var url = api + citytype + apiKey + units;
+
+
+
+
 
 //get the API from openweathermap & with console.log checking if data is loaded
 jQuery.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&APPID=0595215f568d90110031d71a7b16a440",
@@ -43,7 +44,7 @@ function(data){
 $(document).ready(function(){
 //  alert($);   ***for checking if jquery is installed and up and running
 //just for fun to give the page more life
-$("#modalButton").hide().delay(1000).show(1000);
+$("#divBtn").hide().delay(1000).show(3000);
 
 
 //show the modal when clicking on the button "more details"
@@ -59,10 +60,4 @@ $("#modalButton").hide().delay(1000).show(1000);
   $('#myInput').trigger('focus')
   $('#myModal').modal('toggle')
 })
-
-
-
-
-
-
 });
