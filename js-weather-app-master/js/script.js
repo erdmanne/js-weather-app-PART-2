@@ -1,9 +1,19 @@
-var city = "London"
+//stuff for user input (city)
+
+
+
+//
+//var api = "http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&APPID=0595215f568d90110031d71a7b16a440";
+//var citytype = "London";
+//var apiKey = "&APPID=0595215f568d90110031d71a7b16a440";
+//var units = "&units=metric";
+//var url = api + citytype + apiKey + units;
 
 //get the API from openweathermap & with console.log checking if data is loaded
-jQuery.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=0595215f568d90110031d71a7b16a440",
+jQuery.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&APPID=0595215f568d90110031d71a7b16a440",
 function(data){
   console.log(data);
+
 
 //now get the default icons which openweathermap is giving me displayed - created therefore in the indey.html the class for it
 
@@ -13,13 +23,20 @@ function(data){
   var city  = data.name;
   var detailWeather = data.weather[0].description; //get descpription for the details in the modal
 
+
   jQuery(".icon").attr('src', icon);
   jQuery(".temp").append(temp);
   jQuery(".weather").append(weather);
   jQuery(".city").append(city);
   jQuery(".detailWeather").append(detailWeather);
 
+
+
 });
+
+
+
+
 
 //****modal stuff****
 //***most important statement to get jquery "started"

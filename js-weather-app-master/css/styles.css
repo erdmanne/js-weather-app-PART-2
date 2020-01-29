@@ -40,7 +40,7 @@ hover: RGB(219, 202, 207)
 
 body{
 
-  padding: 20px;
+  padding: 0px;
   font-family: var(--font-family);
   font-size: 100%;
   background-image: url("../img/frozen.jpg");
@@ -57,34 +57,54 @@ body{
   main .row div,
   main .row aside,
   main .row article {
-    background-color: #E6E5E5;
-    border: 10px solid green;
-    height: 180px;
+
+  border: dashed;
+    height: 80px;
+    text-align: center;
+    padding: 50 0 10 10;
+    border-radius: 40px;
+
+
   }
+
+
 
 .weather-container {
     text-align: center;
     font-family: var(--font-family);
     font-size: var(--font-size);
+
 }
 
 .weather{
   font-family: var(--h1-font-family);
   font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .icon {
+  margin-top: 20px;
+  margin-bottom: 10px;
 
 }
 
 .temp {
   font-style: italic;
-  font-size: 60px;
+  font-size: 30px;
+  font-family: var(--h1-font-family);
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .city {
+
   font-style: italic;
-  font-size: 60px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10 20 10 3;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .divBtn{
   text-align: center;
