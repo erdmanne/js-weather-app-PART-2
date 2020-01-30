@@ -63,17 +63,13 @@ body{
     text-align: center;
     padding: 50 0 10 10;
     border-radius: 40px;
-
-
   }
-
 
 
 .weather-container {
     text-align: center;
     font-family: var(--font-family);
     font-size: var(--font-size);
-
 }
 
 .weather{
@@ -114,10 +110,8 @@ body{
 .divBtn{
   text-align: center;
 }
-
-
-
 */
+
 .modal-details {
 display: none;
 position: fixed;
